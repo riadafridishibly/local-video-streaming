@@ -1,0 +1,11 @@
+A global json file to keep track of video and other info.
+
+JSON file is a key value pair of 
+
+hash(filename): {
+  title:          Title of the video
+  path:           Absolute path of the video /* it's easier now to deal with */
+  description:    Short video description
+  thumbnail_path: Video thumbnail path /* fixed size picture (low quality) */
+  caption_path: Subtitle for this video /* this could be undefined */
+}
