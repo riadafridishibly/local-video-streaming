@@ -1,0 +1,10 @@
+{
+  "ab12": {
+    "title": "Big Buck Bunny",
+    "path": "test_data/BigBuckBunny.mp4",
+    "video_type": "video/mp4",
+    "description": "This is Big Buck Bunny video",
+    "thumbnail_path": "test_data/thumbnail.png",
+    "caption_path": "#"
+  }
+}
