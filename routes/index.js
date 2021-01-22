@@ -1,8 +1,9 @@
-import express from 'express'
-import controller from '../controllers/video.js'
+import express from "express";
+import vc from "../controllers/video.js";
 
-const router = express.Router()
+const router = express.Router();
 
-router.get('/video/:video_id', controller)
+router.get("/video/:video_id", vc.videoController);
+router.get("/video/data/:video_id", vc.videoData);
 
 export default router;
