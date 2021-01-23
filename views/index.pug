@@ -1,9 +1,5 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Local Video Streaming
-  body
-    video(width="640" controls autoplay) Your browser does not support the video tag.
-      source(src=video_src type=video_type)
+extends common/layout.pug
+
+block content
+  video(width="640" controls autoplay) Your browser does not support the video tag.
+    source(src=video_src type=video_type)
