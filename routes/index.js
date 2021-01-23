@@ -3,6 +3,7 @@ import vc from '../controllers/video.js'
 
 const router = express.Router()
 
+router.get('/', vc.index)
 router.get('/video/:video_id', vc.videoController)
 router.get('/video/data/:video_id', vc.videoData)
 

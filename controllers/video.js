@@ -2,6 +2,10 @@ import fs from 'fs'
 
 const filesPath = JSON.parse(fs.readFileSync('files.json'))
 
+const index = (req, res, next) => {
+  res.render('index', { title: 'Homepage', filesPath: filesPath })
+}
+
 const videoController = (req, res, next) => {
   const videoID = req.params.video_id
   if (!filesPath[videoID]) {
@@ -9,7 +13,7 @@ const videoController = (req, res, next) => {
   } else {
     // what if Video ID is invalid?
     // Render Error page maybe?
-    res.render('index', {
+    res.render('video', {
       title: filesPath[videoID].title,
       video_src: '/video/data/' + videoID,
       video_type: filesPath[videoID].video_type
@@ -55,5 +59,6 @@ const videoData = (req, res, next) => {
 
 export default {
   videoController,
-  videoData
+  videoData,
+  index
 }
