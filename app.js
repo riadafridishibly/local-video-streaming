@@ -16,6 +16,7 @@ app.use(morgan('combined'))
 app.use(json())
 app.use(urlencoded({ extended: false }))
 app.use(express.static('public'))
+app.use(express.static('test_data'))
 
 app.use('/', router)
 

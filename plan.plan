@@ -9,3 +9,11 @@ hash(filename): {
   thumbnail_path: Video thumbnail path /* fixed size picture (low quality) */
   caption_path: Subtitle for this video /* this could be undefined */
 }
+
+What do I need?
+  - Need a route to get the thumbnail
+  - Bootstrap for beauty
+
+Homepage
+  - Homepage should contain all the videos with title and links to those videos
+  - Clicking on the link should move the user to a specific page containing only the video
