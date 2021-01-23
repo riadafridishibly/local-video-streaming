@@ -1,5 +1,15 @@
 extends common/layout.pug
 
+block header
+  h1.display-3.text-center Local Video Server
+  hr.my-4
+
+
 block content
-  video(width="640" controls autoplay) Your browser does not support the video tag.
-    source(src=video_src type=video_type)
+  .row
+    each val, key in filesPath
+      .col
+        a(href="/video/" + key)
+          img(src="thumbnail.png", width="280px" alt="thumbnail").img-thumbnail
+        a(href="video/" + key)
+          p= val.title

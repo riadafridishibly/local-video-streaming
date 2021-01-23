@@ -1,0 +1,9 @@
+extends common/layout.pug
+
+block header
+  h1.display-4.text-center #{title}
+
+block content
+  .d-flex.justify-content-center
+    video(width="80%" controls autoplay) Your browser does not support the video tag.
+      source(src=video_src type=video_type)
