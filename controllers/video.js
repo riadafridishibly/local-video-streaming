@@ -3,14 +3,20 @@ import fs from 'fs'
 const filesPath = JSON.parse(fs.readFileSync('files.json'))
 
 const videoController = (req, res, next) => {
-  // what if Video ID is invalid?
-  // Render Error page maybe?
-  res.render('index', {
-    video_src: '/video/data/' + req.params.video_id,
-    video_type: filesPath[req.params.video_id].video_type
-  })
-  console.log(filesPath)
-  next()
+  const videoID = req.params.video_id
+  if (!filesPath[videoID]) {
+    res.status(404).send(`Video nof found for: ${videoID}`)
+  } else {
+    // what if Video ID is invalid?
+    // Render Error page maybe?
+    res.render('index', {
+      title: filesPath[videoID].title,
+      video_src: '/video/data/' + videoID,
+      video_type: filesPath[videoID].video_type
+    })
+    console.log(filesPath)
+    next()
+  }
 }
 
 // The follwoing part borrowed from this link...
