@@ -18,8 +18,6 @@ const videoController = (req, res, next) => {
       video_src: '/video/data/' + videoID,
       video_type: filesPath[videoID].video_type
     })
-    console.log(filesPath)
-    next()
   }
 }
 
@@ -46,15 +44,11 @@ const videoData = (req, res, next) => {
     'Content-Length': contentLength,
     'Content-Type': 'video/mp4'
   }
-  console.log(headers)
   res.writeHead(206, headers)
 
   const videoStream = fs.createReadStream(videoPath, { start, end })
 
   videoStream.pipe(res)
-
-  console.log(filesPath)
-  next()
 }
 
 export default {
