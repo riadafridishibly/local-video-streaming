@@ -1,34 +1,10 @@
 {
-  "ab12": {
-    "title": "Big Buck Bunny",
-    "path": "test_data/BigBuckBunny.mp4",
+  "7e92f918f394eebea4ac0af6a": {
+    "path": "/home/shibly/Projects/local-video-streaming/test_data/BigBuckBunny.mp4",
+    "title": "BigBuckBunny",
     "video_type": "video/mp4",
-    "description": "This is Big Buck Bunny video",
-    "thumbnail_path": "test_data/thumbnail.png",
-    "caption_path": "#"
-  },
-  "ab123": {
-    "title": "Big Buck Bunny",
-    "path": "test_data/BigBuckBunny.mp4",
-    "video_type": "video/mp4",
-    "description": "This is Big Buck Bunny video",
-    "thumbnail_path": "test_data/thumbnail.png",
-    "caption_path": "#"
-  },
-  "ab1234": {
-    "title": "Big Buck Bunny",
-    "path": "test_data/BigBuckBunny.mp4",
-    "video_type": "video/mp4",
-    "description": "This is Big Buck Bunny video",
-    "thumbnail_path": "test_data/thumbnail.png",
-    "caption_path": "#"
-  },
-  "abc123": {
-    "title": "Big Buck Bunny",
-    "path": "test_data/BigBuckBunny.mp4",
-    "video_type": "video/mp4",
-    "description": "This is Big Buck Bunny video",
-    "thumbnail_path": "test_data/thumbnail.png",
-    "caption_path": "#"
+    "description": "",
+    "thumbnail_path": "",
+    "caption_path": ""
   }
 }
